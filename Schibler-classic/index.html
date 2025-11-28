@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Elektrikern i Stockholm | Bright Elteknik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="nav">
+    <div class="logo">
+      <img class="logo-img" src="logo.avif" alt="Elektrikern i Stockholm">
+    </div>
+    <nav class="nav-links">
+      <a href="#tjanster" data-i18n="nav.services">Tjänster</a>
+      <a href="#fordelar" data-i18n="nav.benefits">Fördelar</a>
+      <a href="#jour" data-i18n="nav.emergency">Jour 24/7</a>
+      <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Språk" data-i18n="lang.group" data-i18n-target="aria-label">
+      <button type="button" class="lang-btn active" data-lang="sv" data-i18n="lang.sv-label" data-i18n-target="aria-label" aria-label="Visa svenska">
+        🇸🇪
+      </button>
+      <button type="button" class="lang-btn" data-lang="en" data-i18n="lang.en-label" data-i18n-target="aria-label" aria-label="Visa engelska">
+        🇬🇧
+      </button>
+    </div>
+    <button class="theme-toggle" aria-label="Byt tema" data-i18n="nav.theme" data-i18n-target="aria-label" data-theme="dark">🌇</button>
+    <button class="nav-toggle" aria-label="Öppna meny" data-i18n="nav.open" data-i18n-target="aria-label" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-cta">
+      <a class="ghost-btn" href="tel:+46852025000" data-i18n="nav.phone">08-520 250 00</a>
+      <a class="primary-btn" href="#kontakt" data-i18n="nav.book">Boka en elektriker</a>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner glass">
+      <div class="mobile-menu-head">
+        <div class="logo">
+          <img class="logo-img" src="logo.avif" alt="Elektrikern i Stockholm">
+        </div>
+        <button class="nav-close" aria-label="Stäng meny" data-i18n="nav.close" data-i18n-target="aria-label">×</button>
+      </div>
+      <nav class="mobile-links">
+        <a href="#tjanster" data-i18n="nav.services">Tjänster</a>
+        <a href="#fordelar" data-i18n="nav.benefits">Fördelar</a>
+        <a href="#jour" data-i18n="nav.emergency">Jour 24/7</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+      <div class="mobile-cta">
+        <a class="primary-btn full" href="#kontakt" data-i18n="nav.book">Boka en elektriker</a>
+        <a class="ghost-btn full" href="tel:+46852025000" data-i18n="mobile.call">Ring 08-520 250 00</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="top">
+      <video class="hero-video" autoplay muted playsinline data-sources="hero-1.mp4, hero-2.mp4, hero-3.mp4"></video>
+      <div class="aurora aurora-1"></div>
+      <div class="aurora aurora-2"></div>
+      <div class="hero-content">
+        <span class="pill-tag" data-i18n="hero.tagline">LOKAL NÄRVARO • STOCKHOLM</span>
+        <h1 data-i18n="hero.title">Behöver du en elektriker i Stockholm?</h1>
+        <div class="lead-rotator">
+          <p class="lead lead-cycle" data-i18n="hero.lead1">
+            Behöver ni hjälp av duktiga elektriker som kommer i tid och utför arbetet korrekt? Vi tar hand om omtrådningar, stigarbyten,
+            elarbeten i lägenheter och villor samt jour, laddboxar och servicejobb åt företag.
+          </p>
+          <p class="lead lead-cycle lead-cycle-delay" data-i18n="hero.lead2">
+            Sedan 2015 har vi gjort tusentals installationer i Stockholm – från småfix till hela entreprenader. Hör av er för en kostnadsfri offert.
+          </p>
+        </div>
+        <div class="cta-row">
+          <a class="primary-btn" href="#kontakt" data-i18n="hero.cta.primary">Boka gratis offert</a>
+          <a class="ghost-btn" href="#fordelar" data-i18n="hero.cta.secondary">Läs mer om oss</a>
+        </div>
+      </div>
+      <div class="hero-panel glass" data-reveal>
+        <div class="panel-header">
+          <span class="dot dot-orange"></span>
+          <span class="dot dot-blue"></span>
+          <span class="dot dot-gray"></span>
+        </div>
+        <div class="panel-body">
+          <p class="panel-label" data-i18n="hero.panel.label">Jourerbjudande</p>
+          <p class="panel-title" data-i18n="hero.panel.title">Jour-elektriker på plats inom 60 minuter med fast pris.</p>
+          <div class="panel-grid">
+            <div>
+              <p class="panel-metric">24/7</p>
+              <p class="panel-caption" data-i18n="hero.panel.metric1">Jour</p>
+            </div>
+            <div>
+              <p class="panel-metric">100%</p>
+              <p class="panel-caption" data-i18n="hero.panel.metric2">Certifierat team</p>
+            </div>
+            <div>
+              <p class="panel-metric" data-i18n="hero.panel.metric3">Svar</p>
+              <p class="panel-caption" data-i18n="hero.panel.metric3caption">Inom 15 min</p>
+            </div>
+            <div>
+              <p class="panel-metric" data-i18n="hero.panel.metric4">Alltid</p>
+              <p class="panel-caption" data-i18n="hero.panel.metric4caption">Certifierade</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="hero-panel-placeholder"></div>
+
+    <section class="section logo-loop" aria-label="Betalningslogotyper" data-i18n="logoLoop.label" data-i18n-target="aria-label">
+      <div class="logo-loop-track">
+        <div class="logo-loop-row">
+          <img src="betalningar/mastercard-1.svg" alt="Mastercard">
+          <img src="betalningar/UC_vit-300x194.png-0195303f.webp" alt="UC">
+          <img src="betalningar/Visa-logo-white-0903a842.webp" alt="Visa">
+          <img src="betalningar/Zettle-300x133.png-21e53b38.webp" alt="Zettle">
+          <img src="betalningar/Bankgirot_vit-300x66.png-2f09aebd.webp" alt="Bankgirot">
+          <img src="betalningar/Swish_vit-300x91.png-f640e940.webp" alt="Swish">
+          <img src="betalningar/Klarna_vit-300x67.png-3459c093.webp" alt="Klarna">
+          <img src="betalningar/Wasa-kredit_vit-300x70.png-955b1418.webp" alt="Wasa Kredit">
+          <img src="betalningar/mastercard-1.svg" alt="Mastercard">
+          <img src="betalningar/UC_vit-300x194.png-0195303f.webp" alt="UC">
+          <img src="betalningar/Visa-logo-white-0903a842.webp" alt="Visa">
+          <img src="betalningar/Zettle-300x133.png-21e53b38.webp" alt="Zettle">
+          <img src="betalningar/Bankgirot_vit-300x66.png-2f09aebd.webp" alt="Bankgirot">
+          <img src="betalningar/Swish_vit-300x91.png-f640e940.webp" alt="Swish">
+          <img src="betalningar/Klarna_vit-300x67.png-3459c093.webp" alt="Klarna">
+          <img src="betalningar/Wasa-kredit_vit-300x70.png-955b1418.webp" alt="Wasa Kredit">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tjanster">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="services.eyebrow">Tjänster</p>
+        <h2 data-i18n="services.title">Våra tjänster i Stockholm &amp; Uppsala</h2>
+        <div class="section-rotator">
+          <p class="section-lead lead-cycle" data-i18n="services.lead1">
+            Letar du efter en pålitlig elektriker för ditt kommande projekt? Oavsett om det är för en nyinstallation,
+            en renovering eller för att byta ut din elcentral, så är vi här för att hjälpa dig.
+          </p>
+          <p class="section-lead lead-cycle lead-cycle-delay" data-i18n="services.lead2">
+            Behöver du assistans med att installera belysning eller byta ut gamla vägguttag? Vi levererar resultat
+            oavsett uppgiftens omfattning.
+          </p>
+        </div>
+      </div>
+      <div class="service-grid">
+        <article class="service-card glass" data-reveal>
+          <div class="icon">⚡</div>
+          <h3 data-i18n="services.items.troubleshooting.title">Felsökning</h3>
+          <p data-i18n="services.items.troubleshooting.body">Snabb analys och åtgärd av elproblem i hem och företag.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">🛠️</div>
+          <h3 data-i18n="services.items.installation.title">Elinstallation</h3>
+          <p data-i18n="services.items.installation.body">Säkra installationer vid nybyggnation, renovering eller uppgraderingar.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">♻️</div>
+          <h3 data-i18n="services.items.maintenance.title">Underhåll</h3>
+          <p data-i18n="services.items.maintenance.body">Planerat underhåll och uppdatering av befintliga anläggningar.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">🚗</div>
+          <h3 data-i18n="services.items.ev.title">Laddboxar</h3>
+          <p data-i18n="services.items.ev.body">Installation av laddbox för elbil med komplett dokumentation.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">🧲</div>
+          <h3 data-i18n="services.items.panel.title">Elcentral</h3>
+          <p data-i18n="services.items.panel.body">Byte till modern el-central med säkra säkringslösningar.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">☀️</div>
+          <h3 data-i18n="services.items.solar.title">Solceller</h3>
+          <p data-i18n="services.items.solar.body">Dimensionering och installation av solpaneler och växelriktare.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">💡</div>
+          <h3 data-i18n="services.items.lighting.title">Belysning</h3>
+          <p data-i18n="services.items.lighting.body">Effektfull belysning inne och ute – från design till driftsättning.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">🛡️</div>
+          <h3 data-i18n="services.items.security.title">Säkerhet &amp; övervakning</h3>
+          <p data-i18n="services.items.security.body">Övervakning, brand- och passagesystem med full dokumentation.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">🔐</div>
+          <h3 data-i18n="services.items.access.title">Inpasseringssystem</h3>
+          <p data-i18n="services.items.access.body">Smart åtkomstkontroll för fastigheter och lokaler.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">🏠</div>
+          <h3 data-i18n="services.items.homeauto.title">Hemautomation</h3>
+          <p data-i18n="services.items.homeauto.body">Styr belysning, värme och trygghet med smarta hem-lösningar.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">🌐</div>
+          <h3 data-i18n="services.items.fiber.title">Fiber och data</h3>
+          <p data-i18n="services.items.fiber.body">Snabb, stabil anslutning med dragning och terminering av fiber och nätverk.</p>
+        </article>
+        <article class="service-card glass" data-reveal>
+          <div class="icon">🤝</div>
+          <h3 data-i18n="services.items.partners.title">BRF &amp; företag</h3>
+          <p data-i18n="services.items.partners.body">Helhetsavtal och driftstöd för bostadsrättsföreningar och kommersiella miljöer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cert-loop" aria-label="Certifieringar">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="certs.eyebrow">Certifierade partners</p>
+        <h2 data-i18n="certs.title">Vårt arbete backas av ledande certifieringar</h2>
+        <p class="section-lead" data-i18n="certs.lead">Vi kvalitetssäkrar installationerna tillsammans med branschorganisationer och tillsynsmyndigheter.</p>
+      </div>
+      <div class="cert-loop-track" aria-hidden="true">
+        <div class="cert-loop-row">
+          <img src="cert-bilder/Installationsforetagen-medlemmar-e133f318.webp" alt="Installationsföretagen medlem">
+          <img src="cert-bilder/elsakerhetsverket-kollaelforetaget-01-c10d98f0.webp" alt="Elsäkerhetsverket">
+          <img src="cert-bilder/fdgdf-e1701177832755-6aaa9081.webp" alt="Certifierad montör">
+          <img src="cert-bilder/thfh-e1701177413205-285x300-1-3e9387ab.webp" alt="Auktoriserad elektriker">
+          <img src="cert-bilder/trhhrh-28ebf5d9.webp" alt="Trygghetsgaranti">
+          <img src="cert-bilder/Installationsforetagen-medlemmar-e133f318.webp" alt="Installationsföretagen medlem">
+          <img src="cert-bilder/elsakerhetsverket-kollaelforetaget-01-c10d98f0.webp" alt="Elsäkerhetsverket">
+          <img src="cert-bilder/fdgdf-e1701177832755-6aaa9081.webp" alt="Certifierad montör">
+          <img src="cert-bilder/thfh-e1701177413205-285x300-1-3e9387ab.webp" alt="Auktoriserad elektriker">
+          <img src="cert-bilder/trhhrh-28ebf5d9.webp" alt="Trygghetsgaranti">
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlight" id="jour">
+      <div class="highlight-inner glass">
+        <div>
+          <p class="eyebrow" data-i18n="jour.eyebrow">EL-Jour 24/7</p>
+          <h2 data-i18n="jour.title">Vi står alltid till hands för att hjälpa våra kunder</h2>
+          <p data-i18n="jour.lead">Allvarligt strömavbrott eller akuta fel? Ring oss direkt så säkrar vi din anläggning.</p>
+          <div class="cta-row">
+            <a class="primary-btn" href="tel:+46852025000" data-i18n="jour.cta.primary">Ring akut</a>
+            <a class="ghost-btn" href="#kontakt" data-i18n="jour.cta.secondary">Kontakt</a>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat glass" data-reveal>
+            <p class="panel-metric">15 min</p>
+            <p class="panel-caption" data-i18n="jour.stat1">Snabb återkoppling</p>
+          </div>
+          <div class="stat glass" data-reveal>
+            <p class="panel-metric">24/7</p>
+            <p class="panel-caption" data-i18n="jour.stat2">Akut support</p>
+          </div>
+          <div class="stat glass" data-reveal>
+            <p class="panel-metric" data-i18n="jour.stat3">Elsäkerhet</p>
+            <p class="panel-caption" data-i18n="jour.stat3caption">Alltid i fokus</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section two-col" id="fordelar">
+      <div class="text">
+        <p class="eyebrow" data-i18n="benefits.eyebrow">Fördelar</p>
+        <h2 data-i18n="benefits.title">När du väljer att anlita en elektriker i Stockholm &amp; Uppsala genom oss får du tillgång till en rad fördelar</h2>
+        <div class="benefits">
+          <div class="benefit glass" data-reveal>
+            <h4 data-i18n="benefits.items.expertise.title">Professionell Expertis</h4>
+            <p data-i18n="benefits.items.expertise.body">Vårt team består av certifierade elektriker med gedigen erfarenhet och utbildning. Vi garanterar professionellt utfört arbete som möter höga standarder.</p>
+          </div>
+          <div class="benefit glass" data-reveal>
+            <h4 data-i18n="benefits.items.safety.title">Säkerhet och Trygghet</h4>
+            <p data-i18n="benefits.items.safety.body">Vi prioriterar säkerheten för både dig och ditt projekt. Arbetet utförs på ett säkert och korrekt sätt.</p>
+          </div>
+          <div class="benefit glass" data-reveal>
+            <h4 data-i18n="benefits.items.tailored.title">Skräddarsydda Lösningar</h4>
+            <p data-i18n="benefits.items.tailored.body">Vi lyssnar på dina behov för att erbjuda el-lösningar som passar din situation och budget.</p>
+          </div>
+          <div class="benefit glass" data-reveal>
+            <h4 data-i18n="benefits.items.payment.title">Flexibla betalningsalternativ</h4>
+            <p data-i18n="benefits.items.payment.body">Enkel och smidig betalning genom Swish, kort, delbetalning eller faktura.</p>
+          </div>
+          <div class="benefit glass" data-reveal>
+            <h4 data-i18n="benefits.items.experience.title">Erfarenhet och kompetens</h4>
+            <p data-i18n="benefits.items.experience.body">Vi hanterar allt från mindre elreparationer till större projekt med samma noggrannhet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="side-card glass" data-reveal>
+        <p class="eyebrow" data-i18n="sidecard.eyebrow">Allt inom el</p>
+        <h3 data-i18n="sidecard.title">Allt inom el-installation i Stockholm &amp; Uppsala</h3>
+        <p data-i18n="sidecard.body">Vi hjälper oavsett storlek, vare sig du är privatperson, BRF eller företag. Allt från att byta el-uttag och strömbrytare till att dra om elen i hela huset eller anläggningen. Arbetet sker alltid tryggt och säkert med dig i fokus.</p>
+        <div class="chips">
+          <span class="chip" data-i18n="sidecard.chips.brf">BRF &amp; nyproduktion</span>
+          <span class="chip" data-i18n="sidecard.chips.smart">Smart belysning</span>
+          <span class="chip" data-i18n="sidecard.chips.fiber">Fiber &amp; data</span>
+          <span class="chip" data-i18n="sidecard.chips.panel">Elcentral</span>
+          <span class="chip" data-i18n="sidecard.chips.solar">Solceller</span>
+        </div>
+        <div class="payments glass">
+          <p class="eyebrow" data-i18n="sidecard.payments.title">Enkla och säkra betalningar</p>
+          <div class="payment-badges">
+            <span data-i18n="sidecard.payments.swish">Swish</span>
+            <span data-i18n="sidecard.payments.card">Kort</span>
+            <span data-i18n="sidecard.payments.klarna">Klarna</span>
+            <span data-i18n="sidecard.payments.installment">Delbetalning</span>
+            <span data-i18n="sidecard.payments.invoice">Faktura</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section grid-cta">
+      <div class="grid-cta-card glass" data-reveal>
+        <p class="eyebrow" data-i18n="guide.eyebrow">Guiden</p>
+        <h3 data-i18n="guide.title">Så hittar du rätt elektriker</h3>
+        <ul class="tick-list">
+          <li data-i18n="guide.tip1">Kontrollera att elföretaget är registrerat hos Elsäkerhetsverket.</li>
+          <li data-i18n="guide.tip2">Säkerställ att elföretaget faktiskt får utföra de arbeten du behöver hjälp med.</li>
+          <li data-i18n="guide.tip3">Be om tydlig offert och tidslinje – vi levererar båda.</li>
+        </ul>
+      </div>
+      <div class="grid-cta-card glass" data-reveal>
+        <p class="eyebrow" data-i18n="process.eyebrow">Process</p>
+        <h3 data-i18n="process.title">Vår väg till en trygg installation</h3>
+        <div class="timeline">
+          <div class="dot"></div>
+          <div class="step">
+            <p class="step-title" data-i18n="process.step1.title">1. Behov &amp; rådgivning</p>
+            <p data-i18n="process.step1.body">Vi tar in förutsättningar och mål – digitalt eller på plats.</p>
+          </div>
+          <div class="step">
+            <p class="step-title" data-i18n="process.step2.title">2. Design &amp; offert</p>
+            <p data-i18n="process.step2.body">Du får en skräddarsydd lösning med kostnadsfri offert.</p>
+          </div>
+          <div class="step">
+            <p class="step-title" data-i18n="process.step3.title">3. Installation</p>
+            <p data-i18n="process.step3.body">Behöriga elektriker installerar med full dokumentation.</p>
+          </div>
+          <div class="step">
+            <p class="step-title" data-i18n="process.step4.title">4. Överlämning</p>
+            <p data-i18n="process.step4.body">Genomgång, egenkontroll och support när du behöver den.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontakt">
+      <div class="contact-card glass" data-reveal>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+        <h2 data-i18n="contact.title">Behövs hjälp? Ring vårt supportteam dygnet runt</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="label" data-i18n="contact.jour.label">Jour</p>
+            <a class="contact-link" href="tel:+46852025000">08-520 250 00</a>
+            <p data-i18n="contact.jour.caption">Jour 24/7</p>
+          </div>
+          <div>
+            <p class="label" data-i18n="contact.email.label">E-post</p>
+            <a class="contact-link" href="mailto:info@brightel.se">info@brightel.se</a>
+          </div>
+          <div>
+            <p class="label" data-i18n="contact.address.label">Besöksadress</p>
+            <p data-i18n="contact.address.street" data-i18n-target="html">Heliosgatan 45<br>120 63 Stockholm</p>
+            <p data-i18n="contact.address.hours">Mån–fre 07:30–17:30</p>
+          </div>
+        </div>
+        <div class="cta-row">
+          <a class="primary-btn" href="mailto:info@brightel.se?subject=Offertförfrågan" data-i18n="contact.cta.mail">Maila info@brightel.se</a>
+          <a class="ghost-btn" href="tel:+46852025000" data-i18n="contact.cta.call">Ring 08-520 250 00</a>
+        </div>
+      </div>
+      <div class="contact-form glass" data-reveal>
+        <p class="eyebrow" data-i18n="contact.form.title">Snabb offert</p>
+        <form id="quote-form">
+          <label for="name" data-i18n="contact.form.name">Namn</label>
+          <input id="name" name="name" type="text" required placeholder="Ditt namn" data-i18n="contact.form.namePlaceholder" data-i18n-target="placeholder">
+          <label for="email" data-i18n="contact.form.email">E-post</label>
+          <input id="email" name="email" type="email" required placeholder="din@epost.se" data-i18n="contact.form.emailPlaceholder" data-i18n-target="placeholder">
+          <label for="service" data-i18n="contact.form.service">Vilken tjänst gäller det?</label>
+          <select id="service" name="service" required>
+            <option value="" data-i18n="contact.form.options.default">Välj alternativ</option>
+            <option data-i18n="contact.form.options.troubleshooting">Jour &amp; felsökning</option>
+            <option data-i18n="contact.form.options.installation">Elarbeten i hemmet</option>
+            <option data-i18n="contact.form.options.ev">Laddbox</option>
+            <option data-i18n="contact.form.options.solar">Energieffektivisering</option>
+            <option data-i18n="contact.form.options.panel">Service &amp; entreprenad</option>
+            <option data-i18n="contact.form.options.other">Annat</option>
+          </select>
+          <label for="message" data-i18n="contact.form.message">Beskriv behovet</label>
+          <textarea id="message" name="message" rows="4" placeholder="Kort beskrivning..." data-i18n="contact.form.messagePlaceholder" data-i18n-target="placeholder"></textarea>
+          <button type="submit" class="primary-btn full" data-i18n="contact.form.submit">Skicka</button>
+          <p class="form-note" data-i18n="contact.form.note">Beskriv vad du vill ha hjälp med så återkopplar vi blixtsnabbt – alltid med kostnadsfri offert.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4 data-i18n="footer.heading">Elektrikern i Stockholm</h4>
+        <p data-i18n="footer.body">Bright Elteknik – lokala elektriker med jour, installation och service sedan 2015.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#top" data-i18n="footer.start">Start</a>
+        <a href="#tjanster" data-i18n="nav.services">Tjänster</a>
+        <a href="#fordelar" data-i18n="nav.benefits">Fördelar</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+      </div>
+      <div class="footer-meta">
+        <p data-i18n="footer.copy">© 2025 Bright Elteknik. Alla rättigheter förbehållna.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="mobile-call" href="tel:+46852025000" aria-label="Ring Elektrikern i Stockholm" data-i18n="mobile.call.aria" data-i18n-target="aria-label">
+    <span class="call-icon" aria-hidden="true">📞</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
